@@ -1,0 +1,28 @@
+yto-downloader/
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── yto_downloader/
+│   ├── __init__.py
+│   ├── main.py          # Main GUI app script
+│   ├── downloader.py    # yt-dlp wrapper + download logic
+│   ├── gui.py           # GUI classes and UI code
+│   └── utils.py         # Helpers (e.g. base64 icon, splash screen)
+├── assets/
+│   └── (if you want to add images/icons externally)
+└── tests/
+    └── test_downloader.py  # Unit tests (optional)
+
+main.py — entry point that runs the app.
+
+downloader.py — functions/classes to handle yt-dlp downloads, options, progress hooks.
+
+gui.py — tkinter GUI classes, widgets, event handlers.
+
+utils.py — utility functions, embedded icons, splash screen code.
+
+requirements.txt — Python dependencies (yt-dlp, Pillow, etc.).
+
+assets/ — external images/icons if you want to load from files instead of base64.
+
+tests/ — automated tests if you want to add them.
